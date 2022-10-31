@@ -2,32 +2,25 @@
 
 
 <div class="container">
+
     <div class="container-left">
 
-      <div class="container-left-products">
-
         <ul *ngFor="let produtos of products">
-          <span class="products">
-            <b>ID :</b>{{produtos.id}}
-            {{produtos.name}}
-            {{produtos.manufacturer}}
-            <b>QTD: </b> {{produtos.qtd}} </span>
+         <div class="checkbox">
+            <span class="top-product">
+              <b>Id:</b>{{produtos.id}}
+              <b>Quantidade: </b>{{produtos.qtd}}
+            </span>
+              <h2>{{produtos.name}}</h2>
+              <h3> <b>R$: </b>{{produtos.price}} <button type="submit">Editar</button></h3>
+         </div>
+
         </ul>
-      </div>
-
-
-      <div class="container-left-price">
-
-        <ul *ngFor="let price of products">
-          <button type="button" class="price">{{price.price}}</button>
-        </ul>
-
-
-      </div>
 
     </div>
 
-  <div class="container-right"> Area de teste</div>
-
-  </div>
+    <div class="container-right">
+      <h1>Editar Valores</h1>
+    </div>
+</div>
 
