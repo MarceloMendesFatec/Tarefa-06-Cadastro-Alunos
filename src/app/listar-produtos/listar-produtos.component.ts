@@ -16,6 +16,7 @@ export class ListarProdutosComponent implements OnInit {
   }
 
   products: Products[] = [];
+  
 
   getProducts(): void {
     this.ProdutoService.getProducts()

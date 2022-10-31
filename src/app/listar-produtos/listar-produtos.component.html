@@ -1,1 +1,33 @@
-<p>listar-produtos works!</p>
+
+
+
+<div class="container">
+    <div class="container-left">
+
+      <div class="container-left-products">
+
+        <ul *ngFor="let produtos of products">
+          <span class="products">
+            <b>ID :</b>{{produtos.id}}
+            {{produtos.name}}
+            {{produtos.manufacturer}}
+            <b>QTD: </b> {{produtos.qtd}} </span>
+        </ul>
+      </div>
+
+
+      <div class="container-left-price">
+
+        <ul *ngFor="let price of products">
+          <button type="button" class="price">{{price.price}}</button>
+        </ul>
+
+
+      </div>
+
+    </div>
+
+  <div class="container-right"> Area de teste</div>
+
+  </div>
+
