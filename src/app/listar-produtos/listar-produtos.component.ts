@@ -16,7 +16,11 @@ export class ListarProdutosComponent implements OnInit {
   }
 
   products: Products[] = [];
-  
+  selectedProduct?: Products;
+
+  onSelect(produto: Products): void{
+    this.selectedProduct = produto;
+  }
 
   getProducts(): void {
     this.ProdutoService.getProducts()

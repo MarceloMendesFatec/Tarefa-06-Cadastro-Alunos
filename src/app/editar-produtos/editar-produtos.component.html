@@ -1,0 +1,13 @@
+<div class="checkbox">
+  <h1>Editar produtos</h1>
+
+
+  <div class="input">
+    <div *ngIf="product">
+      <h4>{{product.name}}</h4>
+    </div>
+
+    <input id="price" [(ngModel)]="product.price" placeholder="Digite o Preco para alterar">
+    <input id="qtd"  [(ngModel)]="product.qtd"   placeholder="Digite a quantidade para alterar">
+  </div>
+</div>

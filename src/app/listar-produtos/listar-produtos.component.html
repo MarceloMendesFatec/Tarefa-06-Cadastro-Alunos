@@ -1,6 +1,4 @@
 
-
-
 <div class="container">
 
     <div class="container-left">
@@ -12,7 +10,10 @@
               <b>Quantidade: </b>{{produtos.qtd}}
             </span>
               <h2>{{produtos.name}}</h2>
-              <h3> <b>R$: </b>{{produtos.price}} <button type="submit">Editar</button></h3>
+              <h3> <b>R$: </b>{{produtos.price}}
+                 <button type="submit"
+                 (click)="onSelect(produtos)">Editar</button>
+              </h3>
          </div>
 
         </ul>
@@ -20,7 +21,8 @@
     </div>
 
     <div class="container-right">
-      <h1>Editar Valores</h1>
+      <app-editar-produtos [product]="selectedProduct"></app-editar-produtos>
     </div>
+
 </div>
 

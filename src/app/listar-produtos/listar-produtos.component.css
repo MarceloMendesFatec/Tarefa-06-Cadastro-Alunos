@@ -34,12 +34,12 @@
  }
 
  .checkbox button{
-    margin-left: 160px;
+    margin-left: 52%;
     border-radius: 2px;
     border-color: #FFFFFF;
-    background-color: #c7183e;
+    background-color: #ff6500;
     color: #FFFFFF;
-    
+
  }
 
  .checkbox h3{
@@ -49,12 +49,24 @@
  .checkbox h2{
   color: #42464d;
  }
+
+ .checkbox button:hover {
+    position: relative;
+    cursor: 	pointer;
+    background-color: #c05006;
+    left: .2em;
+
+ }
+
+ .checkbox button:active{
+  background-color: #c05006;
+ }
  .container-right{
   display: flex;
   width: 30%;
  }
 
  .container-right h1{
-  margin-left: 16%;
+  margin-left: 24%;
  }
 

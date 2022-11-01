@@ -1,0 +1,29 @@
+.checkbox{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-left: 40%;
+  height: 200px
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  background-color: #FFFFFF;
+  height: 400px;
+  gap: 32px;
+  border-radius: 16px ;
+  box-shadow: 4px 4px 16px 4px rgba(0,0,0,0.39);
+}
+
+input{
+  width: 200px;
+  margin-left: 8px;
+  margin-right: 8px;
+  text-align: center;
+  height: 20px;
+  
+
+}
