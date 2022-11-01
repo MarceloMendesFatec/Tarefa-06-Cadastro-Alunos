@@ -1,6 +1,7 @@
 import { Component, OnInit,Input } from '@angular/core';
 import { Products } from 'src/interface-product';
 
+
 @Component({
   selector: 'app-editar-produtos',
   templateUrl: './editar-produtos.component.html',
